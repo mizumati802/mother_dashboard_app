@@ -3,13 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="refresh" content="0;url=https://database-app-6ms4.onrender.com/mother_dashboard">
 <title>リダイレクト中...</title>
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#1a1a1a">
 <style>body{margin:0;background:#1a1a1a;color:#fff;font:16px/1.4 sans-serif;display:flex;align-items:center;justify-content:center;height:100vh}a,#stop{color:#fff;background:none;border:none;text-decoration:underline;cursor:pointer;font:inherit}#stop{position:fixed;bottom:20px}</style>
 <script>
+// 即座にJavaScriptでリダイレクト（head内で最速実行）
 location.href="https://database-app-6ms4.onrender.com/mother_dashboard";
+// Service Worker登録（PWA用）
 if('serviceWorker' in navigator){
   navigator.serviceWorker.register('service-worker.js').catch(()=>{});
 }
